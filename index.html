@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Oluştur</title>
+    <link rel="stylesheet" href="./personal.css">
+</head>
+<body>
+
+<div id="createCardForm">
+    <h2>Kart Oluştur</h2>
+
+    <label class="textt" for="cardName">Adınız:</label>
+    <input class="btkl" type="text" id="cardName" name="cardName" required>
+
+    <label class="textt" for="cardJob">İşiniz:</label>
+    <input class="btkl" type="text" id="cardJob" name="cardJob" required>
+
+    <label class="textt" for="cardPhoto">Fotoğrafınızı Seçin:</label>
+    <input class="dos" type="file" id="cardPhoto" name="cardPhoto" accept="image/*" required>
+
+    <button class="btncl"    type="button" onclick="createCard()">Kartı Oluştur</button>
+</div>
+<!-- <div class="neons col-12">
+    <h1><em>Kartlarınız</em></h1>
+ </div> -->
+
+<div id="cardsContainer">
+    <h2>Kartlarınız</h2>
+</div>
+
+
+
+
+
+<button id="createCardButton" onclick="toggleFormVisibility()">Kart Oluştur</button>
+
+<script src="./personal.js">
+    
+</script>
+
+</body>
+</html>
